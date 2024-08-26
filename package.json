@@ -9,18 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.436.0",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+    "typescript": "^5"
+  },
+  "description": "Modern YouTube is a YouTube clone with the goal to help me, Andrei Sager, practice using UI component libraries and APIs to create an application to test out my skills to see how I can improve it. Another reason for creating this project is because I am dissatisfied with the current UI design of YouTube 2023 as it feels old and decrepid to the evolving times.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
