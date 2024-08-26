@@ -14,6 +14,7 @@ Modern YouTube is a YouTube clone with the goal to help me, Andrei Sager, practi
 
 - Long-form and Short-form Videos
 - Skeleton Loading
+- Categories
 
 ### Potential Feature Improvements
 
