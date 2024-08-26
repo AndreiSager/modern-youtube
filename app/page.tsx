@@ -4,10 +4,12 @@ import Videos from "@/components/Videos";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen min-w-screen-xl flex-col items-center p-24 border-1">
       <NavBar />
-      <SideBar />
-      <Videos />
+      <div className="flex flex-row">
+        <SideBar />
+        <Videos />
+      </div>
     </main>
   );
 }
