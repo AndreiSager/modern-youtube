@@ -26,7 +26,7 @@ export default function VideoCard() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="flex flex-col gap-1">
-          <h1 className="line-clamp-2 w-auto break-words text-base font-semibold md:w-[220px]">
+          <h1 className="line-clamp-2 w-auto break-words text-base font-semibold md:max-w-[210px]">
             Video Title Video Title Video Title Video Title Video Title Video
             Title Title Video Title
           </h1>
@@ -44,9 +44,9 @@ export default function VideoCard() {
           <DropdownMenuTrigger
             asChild={true}
             aria-label="Toggle Video"
-            className="rounded-md hover:bg-stone-100"
+            className="flex-1 rounded-md hover:bg-stone-200"
           >
-            <EllipsisVertical className="h-5 w-5" />
+            <EllipsisVertical size={35} className="p-2" />
           </DropdownMenuTrigger>
           {/* <DropdownMenuContent>
             <DropdownMenuSeparator />
