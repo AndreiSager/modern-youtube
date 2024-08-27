@@ -58,7 +58,7 @@ export default function VideoCard() {
             <EllipsisVertical size={35} className="p-2" />
           </DropdownMenuTrigger>
 
-          <DropdownMenuContent className="w-56">
+          <DropdownMenuContent className="w-56" align="start" side="right">
             <DropdownMenuLabel>Watch</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
