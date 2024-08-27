@@ -1,5 +1,14 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { EllipsisVertical } from "lucide-react";
+import {
+  Ban,
+  Bookmark,
+  CircleMinus,
+  Clock,
+  Download,
+  EllipsisVertical,
+  Flag,
+  ListVideo,
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -48,13 +57,42 @@ export default function VideoCard() {
           >
             <EllipsisVertical size={35} className="p-2" />
           </DropdownMenuTrigger>
-          {/* <DropdownMenuContent>
+
+          <DropdownMenuContent className="w-56">
+            <DropdownMenuLabel>Watch</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
-          </DropdownMenuContent> */}
+            <DropdownMenuItem>
+              <ListVideo className="mr-2 h-4 w-4" />
+              <span>Add To Queue</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Clock className="mr-2 h-4 w-4" />
+              <span>Save To Watch Later</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Bookmark className="mr-2 h-4 w-4" />
+              <span>Save To Playlist</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Download className="mr-2 h-4 w-4" />
+              <span>Download</span>
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuLabel>Avoid</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <Ban className="mr-2 h-4 w-4" />
+              <span>Not Interested</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <CircleMinus className="mr-2 h-4 w-4" />
+              <span>Don't Recommend</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Flag className="mr-2 h-4 w-4" />
+              <span>Report</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
         </DropdownMenu>
       </div>
     </div>
