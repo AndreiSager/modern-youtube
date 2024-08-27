@@ -13,23 +13,28 @@ import { Toggle } from "@/components/ui/toggle";
 export default function VideoCard() {
   return (
     <div>
-      <div className="w-[300px] h-[170px] bg-slate-600 text-white rounded-lg flex items-center justify-center">
-        Landscape Thumbnail
+      <div className="w-[300px] h-[170px] bg-slate-600 text-white rounded-xl flex items-center justify-center">
+        Video Thumbnail
       </div>
       <div className="flex flex-row gap-2 pt-3">
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="">
-          <h1 className="w-[220px] font-semibold line-clamp-2 break-words">
+        <div className="flex flex-col gap-1">
+          <h1 className="w-[220px] font-semibold line-clamp-2 break-words text-base">
             Video Title Video Title Video Title Video Title Video Title Video
             Title Title Video Title
           </h1>
-          <p className="text-sm justify-center items-center">
-            <span>Views</span>
-            <span> • Date Published</span>
-          </p>
+          <div>
+            <p className="text-sm text-gray-500 justify-center items-center font-semibold hover:text-black">
+              Channel Name
+            </p>
+            <p className="text-xs text-gray-500 justify-center items-center font-semibold">
+              <span>Views</span>
+              <span> • Date Published</span>
+            </p>
+          </div>
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild={true} aria-label="Toggle Video">
