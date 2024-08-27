@@ -4,16 +4,19 @@ import React from "react";
 export default function VideoCard() {
   return (
     <div>
-      <h1>Landscape Thumbnail</h1>
-      <div>
-        <h1>Avatar</h1>
+      <div className="w-[300px] h-[170px] bg-slate-600 text-white rounded-lg flex items-center justify-center">
+        Landscape Thumbnail
+      </div>
+      <div className="flex flex-row gap-2 p-2">
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <h1>Title</h1>
+        <div>
+          <h1 className="font-semibold">Video Title</h1>
+          <p className="text-sm">Views • Date Published</p>
+        </div>
       </div>
-      <p>Views • Date Published</p>
     </div>
   );
 }
