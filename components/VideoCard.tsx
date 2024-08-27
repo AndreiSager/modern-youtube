@@ -1,5 +1,14 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import React from "react";
+import { EllipsisVertical } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Toggle } from "@/components/ui/toggle";
 
 export default function VideoCard() {
   return (
@@ -14,11 +23,24 @@ export default function VideoCard() {
         </Avatar>
         <div className="flex-1 mr-8">
           <h1 className="font-semibold">Video Title</h1>
-          <p className="text-sm">
+          <p className="text-sm justify-center items-center">
             Views
             <span> • Date Published</span>
           </p>
         </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger aria-label="Toggle italic">
+            <EllipsisVertical className="h-5 w-5" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>Profile</DropdownMenuItem>
+            <DropdownMenuItem>Billing</DropdownMenuItem>
+            <DropdownMenuItem>Team</DropdownMenuItem>
+            <DropdownMenuItem>Subscription</DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </div>
   );
