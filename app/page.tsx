@@ -6,9 +6,9 @@ import Videos from "@/components/Videos";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen min-w-screen-xl flex-col items-center border-1">
+    <main className="flex min-h-screen min-w-screen-xl flex-col items-center border-1 pt-14">
       <NavBar />
-      <div className="flex flex-row w-full ">
+      <div className="flex flex-row w-full">
         <SideBar />
         <Videos />
       </div>
