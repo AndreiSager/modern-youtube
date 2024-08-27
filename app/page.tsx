@@ -10,7 +10,7 @@ export default function Home() {
       <NavBar />
       <div className="flex flex-row w-full">
         <SideBar />
-        <div className="w-[300px] h-full" />
+        <div className="hidden w-[300px] h-full" />
         <Videos />
       </div>
     </main>

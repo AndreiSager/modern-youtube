@@ -9,13 +9,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Toggle } from "@/components/ui/toggle";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function VideoCard() {
   return (
-    <div>
-      <div className="w-[300px] h-[170px] bg-slate-600 text-white rounded-xl flex items-center justify-center">
-        Video Thumbnail
-      </div>
+    <div className="w-full md:w-auto">
+      <AspectRatio ratio={16 / 9}>
+        <div className="w-full  md:w-[300px] md:h-[170px] h-full bg-slate-600 text-white rounded-xl flex items-center justify-center">
+          Video Thumbnail
+        </div>
+      </AspectRatio>
+
       <div className="flex flex-row gap-2 pt-3">
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" />

@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 
 export default function SideBar() {
   return (
-    <div className=" w-[250px] h-full shadow-md fixed left-0 top-0 pt-14">
+    <div className="w-[250px] h-full shadow-md fixed left-0 top-0 pt-14 bg-white hidden md:flex">
       <ScrollArea className="w-full h-full pl-5 pr-7 flex flex-col items-center justify-center gap-4">
         <div className="pt-5">
           <div className="font-bold text-lg pb-2">Recent</div>
@@ -77,7 +77,7 @@ export default function SideBar() {
 const categories = [
   "Trending",
   "Music",
-  "Moview",
+  "Movies",
   "Gaming",
   "News",
   "Sports",
