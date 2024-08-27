@@ -21,25 +21,27 @@ export default function VideoCard() {
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="flex-1 mr-8">
-          <h1 className="font-semibold">Video Title</h1>
+        <div className="">
+          <h1 className="w-[220px] font-semibold line-clamp-2 break-words">
+            Video Title Video Title Video Title Video Title Video Title Video
+            Title Title Video Title
+          </h1>
           <p className="text-sm justify-center items-center">
-            Views
+            <span>Views</span>
             <span> • Date Published</span>
           </p>
         </div>
         <DropdownMenu>
-          <DropdownMenuTrigger aria-label="Toggle italic">
+          <DropdownMenuTrigger asChild={true} aria-label="Toggle Video">
             <EllipsisVertical className="h-5 w-5" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+          {/* <DropdownMenuContent>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Billing</DropdownMenuItem>
             <DropdownMenuItem>Team</DropdownMenuItem>
             <DropdownMenuItem>Subscription</DropdownMenuItem>
-          </DropdownMenuContent>
+          </DropdownMenuContent> */}
         </DropdownMenu>
       </div>
     </div>
