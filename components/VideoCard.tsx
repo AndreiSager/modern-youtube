@@ -56,7 +56,7 @@ export default function VideoCard() {
             </div>
           </DropdownMenuTrigger>
 
-          <DropdownMenuContent className="w-56" align="start" side="right">
+          <DropdownMenuContent className="w-52" align="start" side="right">
             <DropdownMenuLabel>Watch</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
