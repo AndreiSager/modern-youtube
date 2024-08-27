@@ -34,8 +34,8 @@ export default function VideoCard() {
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="flex flex-col gap-1">
-          <h1 className="line-clamp-2 w-auto break-words text-base font-semibold md:max-w-[210px]">
+        <div className="flex w-[95%] flex-col gap-1">
+          <h1 className="line-clamp-2 break-words text-base font-semibold md:max-w-[210px]">
             Video Title Video Title Video Title Video Title Video Title Video
             Title Title Video Title
           </h1>
@@ -50,12 +50,10 @@ export default function VideoCard() {
           </div>
         </div>
         <DropdownMenu>
-          <DropdownMenuTrigger
-            asChild={true}
-            aria-label="Toggle Video"
-            className="flex-1 rounded-md hover:bg-stone-200"
-          >
-            <EllipsisVertical size={35} className="p-2" />
+          <DropdownMenuTrigger asChild={true} aria-label="Toggle Video">
+            <div className="flex h-8 w-8 items-center justify-center rounded-md hover:bg-stone-200 enabled:bg-stone-200">
+              <EllipsisVertical size={35} className="p-1" />
+            </div>
           </DropdownMenuTrigger>
 
           <DropdownMenuContent className="w-56" align="start" side="right">
