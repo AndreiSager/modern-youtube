@@ -15,7 +15,7 @@ export default function VideoCard() {
   return (
     <div className="w-full md:w-auto">
       <AspectRatio ratio={16 / 9}>
-        <div className="w-full  md:w-[300px] md:h-[170px] h-full bg-slate-600 text-white rounded-xl flex items-center justify-center">
+        <div className="flex h-full w-full items-center justify-center rounded-xl bg-slate-600 text-white md:h-[170px] md:w-[300px]">
           Video Thumbnail
         </div>
       </AspectRatio>
@@ -26,15 +26,15 @@ export default function VideoCard() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="flex flex-col gap-1">
-          <h1 className="w-[220px] font-semibold line-clamp-2 break-words text-base">
+          <h1 className="line-clamp-2 w-[220px] break-words text-base font-semibold">
             Video Title Video Title Video Title Video Title Video Title Video
             Title Title Video Title
           </h1>
           <div>
-            <p className="text-sm text-gray-500 justify-center items-center font-semibold hover:text-black">
+            <p className="items-center justify-center text-sm font-semibold text-gray-500 hover:text-black">
               Channel Name
             </p>
-            <p className="text-xs text-gray-500 justify-center items-center font-semibold">
+            <p className="items-center justify-center text-xs font-semibold text-gray-500">
               <span>Views</span>
               <span> • Date Published</span>
             </p>

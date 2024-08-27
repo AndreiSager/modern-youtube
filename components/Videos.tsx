@@ -4,9 +4,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Videos() {
   return (
-    <div className="w-full md:w-fit h-full flex flex-row flex-wrap items-end justify-end">
+    <div className="flex h-full w-full flex-row flex-wrap items-end justify-end md:w-fit">
       <div>
-        <div className="w-fit flex flex-row flex-wrap gap-4 items-end justify-end p-6">
+        <div className="flex w-fit flex-row flex-wrap items-end justify-end gap-4 p-6">
           {videos.map((number) => (
             <VideoCard key={number} />
           ))}
@@ -16,7 +16,7 @@ export default function Videos() {
       <div className="py-10">
         <h1 className="px-6 text-2xl font-bold">Shorts</h1>
 
-        <div className="w-fit flex flex-row flex-wrap gap-4 items-end justify-end p-6">
+        <div className="flex w-fit flex-row flex-wrap items-end justify-end gap-4 p-6">
           {shorts.map((number) => (
             <ShortsCard key={number} />
           ))}

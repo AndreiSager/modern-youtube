@@ -5,12 +5,12 @@ import { Mail } from "lucide-react";
 
 export default function SideBar() {
   return (
-    <div className="w-[250px] h-full shadow-md fixed left-0 top-0 pt-14 bg-white hidden md:flex">
-      <ScrollArea className="w-full h-full pl-5 pr-7 flex flex-col items-center justify-center gap-4">
+    <div className="fixed left-0 top-0 hidden h-full w-[250px] bg-white pt-14 shadow-md md:flex">
+      <ScrollArea className="flex h-full w-full flex-col items-center justify-center gap-4 pl-5 pr-7">
         <div className="pt-5">
-          <div className="font-bold text-lg pb-2">Recent</div>
+          <div className="pb-2 text-lg font-bold">Recent</div>
 
-          <div className="w-fit flex flex-row flex-wrap items-end justify-end">
+          <div className="flex w-fit flex-row flex-wrap items-end justify-end">
             {categories.map((category) => (
               <Button
                 key={category}
@@ -25,9 +25,9 @@ export default function SideBar() {
 
         <Separator className="my-4" />
         <div className="pt-5">
-          <div className="font-bold text-lg pb-2">Explore</div>
+          <div className="pb-2 text-lg font-bold">Explore</div>
 
-          <div className="w-fit flex flex-row flex-wrap items-end justify-end">
+          <div className="flex w-fit flex-row flex-wrap items-end justify-end">
             {categories.map((category) => (
               <Button
                 key={category}
@@ -42,9 +42,9 @@ export default function SideBar() {
 
         <Separator className="my-4" />
         <div className="pt-5">
-          <div className="font-bold text-lg pb-2">Explore</div>
+          <div className="pb-2 text-lg font-bold">Explore</div>
 
-          <div className="w-fit flex flex-row flex-wrap items-end justify-end">
+          <div className="flex w-fit flex-row flex-wrap items-end justify-end">
             {categories.map((category) => (
               <Button
                 key={category}
