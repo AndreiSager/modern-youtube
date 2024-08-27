@@ -1,9 +1,10 @@
 import ShortsCard from "./ShortsCard";
 import VideoCard from "./VideoCard";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Videos() {
   return (
-    <div className="h-full flex flex-row flex-wrap items-end justify-end">
+    <div className="w-fit h-full flex flex-row flex-wrap items-end justify-end">
       <div>
         <div className="w-fit flex flex-row flex-wrap gap-4 items-end justify-end p-6">
           {videos.map((number) => (
