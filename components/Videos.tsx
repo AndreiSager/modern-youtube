@@ -6,7 +6,7 @@ export default function Videos() {
   return (
     <div className="flex h-full w-full flex-row flex-wrap items-end justify-end md:w-fit">
       <div>
-        <div className="flex w-fit flex-row flex-wrap items-end justify-end gap-4 p-6">
+        <div className="flex w-fit flex-row flex-wrap items-end justify-end gap-4 md:p-6">
           {videos.map((number) => (
             <VideoCard key={number} />
           ))}
