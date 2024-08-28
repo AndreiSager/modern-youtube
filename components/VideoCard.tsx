@@ -19,11 +19,29 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Toggle } from "@/components/ui/toggle";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
 
-export default function VideoCard() {
+interface VideoCard {
+  title: string;
+  channelThumbnail: {
+    url: string;
+  };
+  channelTitle: string;
+  viewCount: string;
+  publishedTimeText: string;
+}
+
+export default function VideoCard({
+  title,
+  channelThumbnail,
+  channelTitle,
+  viewCount,
+  publishedTimeText,
+}: VideoCard) {
   return (
     <div className="w-full md:w-auto">
       <AspectRatio ratio={16 / 9}>
+        <Image src="" fill alt="" />
         <div className="flex h-full w-full cursor-pointer items-center justify-center bg-slate-600 text-white md:h-[170px] md:w-[300px] md:rounded-xl">
           Video Thumbnail
         </div>
@@ -31,24 +49,20 @@ export default function VideoCard() {
 
       <div className="flex flex-row gap-2 px-1 pt-3 md:px-0">
         <Avatar>
-          <AvatarImage
-            src="https://github.com/shadcn.png"
-            className="cursor-pointer"
-          />
+          <AvatarImage src={channelThumbnail.url} className="cursor-pointer" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="flex w-[95%] flex-col gap-1">
           <h1 className="line-clamp-2 cursor-pointer break-words text-base font-semibold md:max-w-[210px]">
-            Video Title Video Title Video Title Video Title Video Title Video
-            Title Title Video Title
+            {title}
           </h1>
           <div>
             <p className="cursor-pointer items-center justify-center text-sm font-semibold text-gray-500 hover:text-black">
-              Channel Name
+              {channelTitle}
             </p>
             <p className="items-center justify-center text-xs font-semibold text-gray-500">
-              <span>Views</span>
-              <span> • Date Published</span>
+              <span>{viewCount}</span>
+              {publishedTimeText && <span> • {publishedTimeText}</span>}
             </p>
           </div>
         </div>
