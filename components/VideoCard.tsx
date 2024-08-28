@@ -24,23 +24,26 @@ export default function VideoCard() {
   return (
     <div className="w-full md:w-auto">
       <AspectRatio ratio={16 / 9}>
-        <div className="flex h-full w-full items-center justify-center bg-slate-600 text-white md:h-[170px] md:w-[300px] md:rounded-xl">
+        <div className="flex h-full w-full cursor-pointer items-center justify-center bg-slate-600 text-white md:h-[170px] md:w-[300px] md:rounded-xl">
           Video Thumbnail
         </div>
       </AspectRatio>
 
       <div className="flex flex-row gap-2 px-1 pt-3 md:px-0">
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage
+            src="https://github.com/shadcn.png"
+            className="cursor-pointer"
+          />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="flex w-[95%] flex-col gap-1">
-          <h1 className="line-clamp-2 break-words text-base font-semibold md:max-w-[210px]">
+          <h1 className="line-clamp-2 cursor-pointer break-words text-base font-semibold md:max-w-[210px]">
             Video Title Video Title Video Title Video Title Video Title Video
             Title Title Video Title
           </h1>
           <div>
-            <p className="items-center justify-center text-sm font-semibold text-gray-500 hover:text-black">
+            <p className="cursor-pointer items-center justify-center text-sm font-semibold text-gray-500 hover:text-black">
               Channel Name
             </p>
             <p className="items-center justify-center text-xs font-semibold text-gray-500">
@@ -51,7 +54,7 @@ export default function VideoCard() {
         </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild={true} aria-label="Toggle Video">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md hover:bg-stone-200 enabled:bg-stone-200">
+            <div className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md hover:bg-stone-200 enabled:bg-stone-200">
               <EllipsisVertical size={35} className="p-1" />
             </div>
           </DropdownMenuTrigger>
