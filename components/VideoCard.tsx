@@ -23,9 +23,7 @@ import Image from "next/image";
 
 interface VideoCard {
   title: string;
-  channelThumbnail: {
-    url: string;
-  };
+  channelThumbnail: { url: string };
   channelTitle: string;
   viewCount: string;
   publishedTimeText: string;
@@ -49,7 +47,7 @@ export default function VideoCard({
 
       <div className="flex flex-row gap-2 px-1 pt-3 md:px-0">
         <Avatar>
-          <AvatarImage src={channelThumbnail.url} className="cursor-pointer" />
+          <AvatarImage src={channelThumbnail?.url} className="cursor-pointer" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="flex w-[95%] flex-col gap-1">
